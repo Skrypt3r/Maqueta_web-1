@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #001058;
+}
+
+.contenedor_logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  color: #fffb00;
+}
+
+.hamburguesa {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor_menu-sociales {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #ffffff8f;
+}
+
+.opciones_menu {
+  display: block;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.opciones_menu li {
+  padding: 20px 0;
+}
+.opciones_menu a {
+  text-decoration: none;
+  color: #001058;
+}
+
+.opciones_social {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+  justify-content: center;
+}
+.opciones_social li {
+  margin: 0 20px;
+}
+.opciones_social a {
+  color: #001058;
+}
+
+/*# sourceMappingURL=style.css.map */
