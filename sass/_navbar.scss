@@ -1,76 +1,100 @@
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav {
+.nav {
+  @include laptop{
     background-color: $azul;
   }
-  .contenedor_logo{
-      display: flex;
-      flex-direction: row;
-  }
-
-  .logo {
-    text-decoration: none;
-    font-size: 20px;
-    margin: 10px 0;
-    font-weight: 600;
+}
+.contenedor_logo{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    color: $amarillo;
-  }
-
-  .hamburguesa{
-    font-size: 20px;
-    color: white;
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    background-color: $azul;
 }
 
-   .contenedor_menu-sociales{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: $blanco;
+.logo {
+  text-decoration: none;
+  font-size: 50px;
+  margin: 10px 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
 }
-  
-  .opciones_menu{
-    display: block;
-    width: 100%;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-    font-size: 20px;
-    font-weight: 600;
 
-    li{
-        padding: 20px 0;
-    }
+.hamburguesa{
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  left: 20px;
+  top: 30px;
+}
 
-    a{
-        text-decoration: none;
-        color: $azul;
-    }
+.contenedor_menu-sociales{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.close{
+  color: white;
+  font-size: 50px;
+  display: block;
+  text-align: right;
+  padding: 15px;
+}
+
+.opciones_menu{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 50px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 600;
+
+  li{
+      padding: 20px 0;
   }
-  
-  .opciones_social{
-    display: flex;
-    width: 100%;
-    list-style: none;
-    font-size: 20px;
-    padding: 0;
-    justify-content: center;
 
-    li{
-        margin: 0 20px;
-    }
-
-    a{
-        color: $azul;
-    }
+  a{
+      text-decoration: none;
+      color: white;
   }
+}
+
+.opciones_social{
+  margin: 0;
+  display: flex;
+  width: 100%;
+  list-style: none;
+  font-size: 20px;
+  padding: 0;
+  justify-content: center;
+
+  li{
+      margin: 0 20px;
+  }
+
+  a{
+      color: white;
+  }
+}
+
+.sub_logo{
+  color: white;
+  font-size: 50px;
+  display: block;
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  
+}
