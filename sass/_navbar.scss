@@ -1,5 +1,5 @@
 .nav {
-  @include laptop{
+  @include for-laptop{
     background-color: $azul;
   }
 }
@@ -19,6 +19,11 @@
   justify-content: center;
   width: 100%;
   color: white;
+
+  @include for-laptop{
+    justify-content: right;
+    font-size: 70px;
+  }
 }
 
 .hamburguesa{
@@ -28,6 +33,43 @@
   display: flex;
   left: 20px;
   top: 30px;
+
+  @include for-tablet{
+    left: 50px;
+  }
+
+  @include for-laptop{
+    font-size: 30px;
+  }
+}
+
+.opciones_menu_laptop{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding: 0 50px;
+
+  li{
+    padding: 0 20px;
+  }
+  
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+  }
+
+  button{
+    width: 70px;
+    height: 30px;
+    background-color: $boton;
+    color: white;
+    border: 0px solid;
+    font-size: 12px;
+    font-weight: 800;
+  }
 }
 
 .contenedor_menu-sociales{
@@ -38,6 +80,11 @@
   display: flex;
   flex-direction: column;
   background-color: black;
+  
+  @include for-laptop{
+    width: 30%;
+    display: none;
+  }
 }
 
 .close{

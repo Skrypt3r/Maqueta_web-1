@@ -4,7 +4,7 @@ body {
   font-family: "Big Shoulders Stencil Display", cursive;
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .nav {
     background-color: #08162B;
   }
@@ -27,6 +27,12 @@ body {
   width: 100%;
   color: white;
 }
+@media (min-width: 1024px) {
+  .logo {
+    justify-content: right;
+    font-size: 70px;
+  }
+}
 
 .hamburguesa {
   position: absolute;
@@ -35,6 +41,42 @@ body {
   display: flex;
   left: 20px;
   top: 30px;
+}
+@media (min-width: 768px) {
+  .hamburguesa {
+    left: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .hamburguesa {
+    font-size: 30px;
+  }
+}
+
+.opciones_menu_laptop {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  padding: 0 50px;
+}
+.opciones_menu_laptop li {
+  padding: 0 20px;
+}
+.opciones_menu_laptop a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.opciones_menu_laptop button {
+  width: 70px;
+  height: 30px;
+  background-color: #F29494;
+  color: white;
+  border: 0px solid;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .contenedor_menu-sociales {
@@ -45,6 +87,12 @@ body {
   display: flex;
   flex-direction: column;
   background-color: black;
+}
+@media (min-width: 1024px) {
+  .contenedor_menu-sociales {
+    width: 30%;
+    display: none;
+  }
 }
 
 .close {
