@@ -1,6 +1,8 @@
-.nav {
+/* .nav {     
   @include for-laptop{
     background-color: $azul;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
   }
 }
 .contenedor_logo{
@@ -144,4 +146,10 @@
   right: 0;
   bottom: 0;
   
+} */
+
+nav{
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  background-color: $azul;
 }
