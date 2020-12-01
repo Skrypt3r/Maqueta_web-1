@@ -4,159 +4,63 @@ body {
   font-family: "Big Shoulders Stencil Display", cursive;
 }
 
-/* .nav {     
-  @include for-laptop{
-    background-color: $azul;
+@media (max-width: 320px) {
+  nav {
     display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-columns: 40% 60%;
+    background-color: #08162B;
   }
 }
-.contenedor_logo{
-    display: flex;
-    flex-direction: row;
-    background-color: $azul;
-}
-
-.logo {
-  text-decoration: none;
-  font-size: 50px;
-  margin: 10px 0;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  color: white;
-
-  @include for-laptop{
-    justify-content: right;
-    font-size: 70px;
+@media (min-width: 1024px) {
+  nav {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    background-color: #08162B;
   }
 }
 
-.hamburguesa{
+.contenedor_menu {
   position: absolute;
-  font-size: 20px;
-  color: white;
-  display: flex;
-  left: 20px;
-  top: 30px;
-
-  @include for-tablet{
-    left: 50px;
-  }
-
-  @include for-laptop{
-    font-size: 30px;
-  }
-}
-
-.opciones_menu_laptop{
-  list-style: none;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  padding: 0 50px;
-
-  li{
-    padding: 0 20px;
-  }
-
-  a{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-  }
-
-  button{
-    width: 70px;
-    height: 30px;
-    background-color: $boton;
-    color: white;
-    border: 0px solid;
-    font-size: 12px;
-    font-weight: 800;
-  }
-}
-
-.contenedor_menu-sociales{
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-
-  @include for-laptop{
-    width: 30%;
-    display: none;
-  }
-}
-
-.close{
-  color: white;
-  font-size: 50px;
-  display: block;
-  text-align: right;
-  padding: 15px;
-}
-
-.opciones_menu{
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 50px;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  font-size: 30px;
-  font-weight: 600;
-
-  li{
-      padding: 20px 0;
-  }
-
-  a{
-      text-decoration: none;
-      color: white;
-  }
-}
-
-.opciones_social{
-  margin: 0;
-  display: flex;
-  width: 100%;
-  list-style: none;
-  font-size: 20px;
-  padding: 0;
-  justify-content: center;
-
-  li{
-      margin: 0 20px;
-  }
-
-  a{
-      color: white;
-  }
-}
-
-.sub_logo{
-  color: white;
-  font-size: 50px;
-  display: block;
-  margin: 20px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-} */
-nav {
   display: grid;
-  grid-template-columns: 40% 20% 40%;
-  background-color: #08162B;
+  grid-template-columns: 20% 60% 20%;
+}
+
+@media (max-width: 320px) {
+  .menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .item_menu a {
+    color: white;
+    text-decoration: none;
+  }
+}
+@media (min-width: 1024px) {
+  .item_menu {
+    padding: 10px;
+  }
+  .item_menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

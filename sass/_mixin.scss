@@ -1,5 +1,5 @@
 @mixin for-small-mobile {
-    @media (max-width: 320px) and (min-width: 375px) { @content; }
+    @media (max-width: 320px) { @content; }
   }
   @mixin for-medium-mobile {
     @media (min-width: 375px) { @content; }
