@@ -4,53 +4,109 @@ body {
   font-family: "Big Shoulders Stencil Display", cursive;
 }
 
-@media (max-width: 320px) {
-  nav {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    background-color: #08162B;
-  }
+nav {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: #08162B;
 }
 @media (min-width: 1024px) {
   nav {
     display: grid;
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 30% 40% 30%;
     background-color: #08162B;
+  }
+}
+
+.icon_menu {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  align-content: center;
+  padding: 10px;
+}
+@media (min-width: 1024px) {
+  .icon_menu {
+    display: none;
+  }
+}
+
+.logo {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+}
+@media (min-width: 1024px) {
+  .logo {
+    font-size: 60px;
   }
 }
 
 .contenedor_menu {
   position: absolute;
-  position: absolute;
   top: 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
+  height: 100%;
+  background-color: black;
 }
-
-@media (max-width: 320px) {
-  .menu {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
+@media (min-width: 768px) {
+  .contenedor_menu {
+    width: 30%;
   }
 }
 @media (min-width: 1024px) {
-  .menu {
+  .contenedor_menu {
+    position: relative;
+    background-color: #08162B;
     display: flex;
-    list-style: none;
-    align-items: center;
+    width: 100%;
     justify-content: center;
   }
 }
 
-@media (max-width: 320px) {
-  .item_menu a {
-    color: white;
-    text-decoration: none;
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+@media (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
+}
+
+.icon_menu_out {
+  color: white;
+  display: block;
+  text-align: end;
+  padding: 20px;
+  font-size: 30px;
+}
+@media (min-width: 1024px) {
+  .icon_menu_out {
+    display: none;
+  }
+}
+
+.item_menu {
+  padding: 10px;
+}
+.item_menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
 }
 @media (min-width: 1024px) {
   .item_menu {
@@ -61,6 +117,45 @@ body {
     color: white;
     font-size: 20px;
   }
+}
+
+.boton_compra {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .boton_compra {
+    background-color: #F29494;
+    color: white;
+    border-style: none;
+    border-radius: 0;
+    padding: 10px;
+    display: block;
+  }
+}
+
+.sub_logo {
+  color: white;
+  padding: 20px;
+  font-size: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media (min-width: 1024px) {
+  .sub_logo {
+    display: none;
+  }
+}
+
+.accion {
+  display: flex;
+  justify-content: center;
+}
+.accion a {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
